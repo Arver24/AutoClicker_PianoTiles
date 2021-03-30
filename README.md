@@ -9,7 +9,7 @@ An auto clicker for piano tiles, inspired by Code Bullet
   - is anything else scarier?
   
   
-  so # INSTRUCTIONS : 
+  so <b>THE INSTRUCTIONS</b> : 
   1. Open this [link](https://www.agame.com/game/magic-piano-tiles)
   2. Download and open the only file in this repo
   3. Go to the link tab and press the full screen button.....hopefully everyone knows how that looks like
