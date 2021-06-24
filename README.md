@@ -3,7 +3,7 @@ An auto clicker for piano tiles, inspired by Code Bullet
 
 
 # <p style="text-align: center;">  INSTRUCTIONS  
-  Do follow these to a t
+  Do follow these to a t.
   Non-compliance can lead to:
   - the creation of Skynet
   - is anything else scarier?
