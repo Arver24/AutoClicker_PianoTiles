@@ -3,7 +3,9 @@ import cv2
 import numpy as np
 from PIL import ImageGrab
 
-sleepspeed = 0.115
+FRAME_RATE = 360
+clkSpd = 3.6 / FRAME_RATE
+# delspeed = 0.0008
 last_time = pg.time.time()
 
 while True:
@@ -15,10 +17,10 @@ while True:
     frame = np.array(img)
     screen = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     # out.write(frame)
-    cv2.imshow("", frame)
+    # cv2.imshow("", frame)
 
     for y in range(500, 400, -1):
-        for x in range(1160,1150, -1):
+        for x in range(1140, 1130, -1):
             c = screen[y][x] == 0
             d = screen[y][x - 120] == 0
             e = screen[y][x - 240] == 0
@@ -28,7 +30,7 @@ while True:
                 newY = y
                 pg.mouseDown(x=newX, y=newY)
 
-                pg.sleep(0.06)
+                pg.sleep(clkSpd)
                 pg.mouseUp(x=newX, y=newY)
                 break
             elif d.any():
@@ -36,7 +38,7 @@ while True:
                 newY = y
                 pg.mouseDown(x=newX, y=newY)
 
-                pg.sleep(0.06)
+                pg.sleep(clkSpd)
                 pg.mouseUp(x=newX, y=newY)
                 break
             elif e.any():
@@ -44,7 +46,7 @@ while True:
                 newY = y
                 pg.mouseDown(x=newX, y=newY)
 
-                pg.sleep(0.06)
+                pg.sleep(clkSpd)
                 pg.mouseUp(x=newX, y=newY)
                 break
 
@@ -53,7 +55,7 @@ while True:
                 newY = y
                 pg.mouseDown(x=newX, y=newY)
 
-                pg.sleep(0.06)
+                pg.sleep(clkSpd)
                 pg.mouseUp(x=newX, y=newY)
                 break
 
